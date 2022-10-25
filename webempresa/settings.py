@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "blog",
     "ckeditor",
+    "contact",
     "core",
     "services.apps.ServicesConfig",
     "social.apps.SocialConfig",
@@ -136,3 +137,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Ckeditor
 CKEDITOR_CONFIGS = {"default": {"toolbar": "Custom", "toolbar_Custom": [["Bold", "Italic", "Underline"], ["link", "Unlink"]]}}
+
+# Email config
+EMAIL_HOST = "smtp.mailtrap.io"
+EMAIL_HOST_USER = "f4310111865fac"
+EMAIL_HOST_PASSWORD = "a3aa4af57a24ec"
+EMAIL_PORT = "2525"
